@@ -268,26 +268,54 @@ histsToWrap = [
     # (loc+'ZeeTP_Data_Fits_Trg_AIso2_pt_bins_inc_eta.root:Trg_AIso2_pt_bins_inc_eta',      'e_trg_aiso2_kit_data'),
     # (loc+'ZeeTP_DYJetsToLL_Fits_Trg_AIso2_pt_bins_inc_eta.root:Trg_AIso2_pt_bins_inc_eta',        'e_trg_aiso2_kit_mc'),
     # (loc+'ZeeTP_Embedding_Fits_Trg_AIso2_pt_bins_inc_eta.root:Trg_AIso2_pt_bins_inc_eta', 'e_trg_aiso2_kit_embed'),
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins',      'e_trg27_trg32_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins',        'e_trg27_trg32_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_onlyt35_Iso_pt_eta_bins', 'e_trg27_trg32_kit_embed'),
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta',      'e_trg27_trg32_aiso_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta',        'e_trg27_trg32_aiso_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_onlyt35_AIso_pt_bins_inc_eta', 'e_trg27_trg32_aiso_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_Iso_pt_eta_bins.root:Trg27_or_Trg32_Iso_pt_eta_bins',      'e_trg27_trg32_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_Iso_pt_eta_bins.root:Trg27_or_Trg32_Iso_pt_eta_bins',        'e_trg27_trg32_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_Iso_pt_eta_bins.root:Trg27_or_Trg32_Iso_pt_eta_bins', 'e_trg27_trg32_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_AIso_pt_bins_inc_eta',      'e_trg27_trg32_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_AIso_pt_bins_inc_eta',        'e_trg27_trg32_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_AIso_pt_bins_inc_eta', 'e_trg27_trg32_aiso_kit_embed'),
 
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins',      'e_trg27_trg35_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins',        'e_trg27_trg35_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg35_onlyt35_Iso_pt_eta_bins', 'e_trg27_trg35_kit_embed'),
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta',      'e_trg27_trg35_aiso_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta',        'e_trg27_trg35_aiso_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_onlyt35_AIso_pt_bins_inc_eta', 'e_trg27_trg35_aiso_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg35_Iso_pt_eta_bins.root:Trg27_or_Trg35_Iso_pt_eta_bins',      'e_trg27_trg35_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg35_Iso_pt_eta_bins.root:Trg27_or_Trg35_Iso_pt_eta_bins',        'e_trg27_trg35_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg35_Iso_pt_eta_bins.root:Trg27_or_Trg35_Iso_pt_eta_bins', 'e_trg27_trg35_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_AIso_pt_bins_inc_eta',      'e_trg27_trg35_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_AIso_pt_bins_inc_eta',        'e_trg27_trg35_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg35_AIso_pt_bins_inc_eta', 'e_trg27_trg35_aiso_kit_embed'),
 
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins',      'e_trg27_trg32_trg32fb_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins',        'e_trg27_trg32_trg32fb_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_Iso_pt_eta_bins', 'e_trg27_trg32_trg32fb_kit_embed'),
-    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta',      'e_trg27_trg32_trg32fb_aiso_kit_data'),
-    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta',        'e_trg27_trg32_trg32fb_aiso_kit_mc'),
-    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_onlyt35_AIso_pt_bins_inc_eta', 'e_trg27_trg32_trg32fb_aiso_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins',      'e_trg27_trg32_trg32fb_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins',        'e_trg27_trg32_trg32fb_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins.root:Trg27_or_Trg32_or_Trg32fb_Iso_pt_eta_bins', 'e_trg27_trg32_trg32fb_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta',      'e_trg27_trg32_trg32fb_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta',        'e_trg27_trg32_trg32fb_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta.root:Trg27_or_Trg32_or_Trg32fb_AIso_pt_bins_inc_eta', 'e_trg27_trg32_trg32fb_aiso_kit_embed'),
+
+    (loc+'ZeeTP_Data_Fits_Trg27_Iso_pt_eta_bins.root:Trg27_Iso_pt_eta_bins',      'e_trg27_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_Iso_pt_eta_bins.root:Trg27_Iso_pt_eta_bins',        'e_trg27_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_Iso_pt_eta_bins.root:Trg27_Iso_pt_eta_bins', 'e_trg27_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg27_AIso_pt_bins_inc_eta.root:Trg27_AIso_pt_bins_inc_eta',      'e_trg27_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg27_AIso_pt_bins_inc_eta.root:Trg27_AIso_pt_bins_inc_eta',        'e_trg27_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg27_AIso_pt_bins_inc_eta.root:Trg27_AIso_pt_bins_inc_eta', 'e_trg27_aiso_kit_embed'),
+
+    (loc+'ZeeTP_Data_Fits_Trg32_Iso_pt_eta_bins.root:Trg32_Iso_pt_eta_bins',      'e_trg32_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg32_Iso_pt_eta_bins.root:Trg32_Iso_pt_eta_bins',        'e_trg32_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg32_Iso_pt_eta_bins.root:Trg32_Iso_pt_eta_bins', 'e_trg32_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg32_AIso_pt_bins_inc_eta.root:Trg32_AIso_pt_bins_inc_eta',      'e_trg32_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg32_AIso_pt_bins_inc_eta.root:Trg32_AIso_pt_bins_inc_eta',        'e_trg32_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg32_AIso_pt_bins_inc_eta.root:Trg32_AIso_pt_bins_inc_eta', 'e_trg32_aiso_kit_embed'),
+
+    (loc+'ZeeTP_Data_Fits_Trg32_fb_Iso_pt_eta_bins.root:Trg32_fb_Iso_pt_eta_bins',      'e_trg32fb_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg32_fb_Iso_pt_eta_bins.root:Trg32_fb_Iso_pt_eta_bins',        'e_trg32fb_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg32_fb_Iso_pt_eta_bins.root:Trg32_fb_Iso_pt_eta_bins', 'e_trg32fb_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg32_fb_AIso_pt_bins_inc_eta.root:Trg32_fb_AIso_pt_bins_inc_eta',      'e_trg32fb_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg32_fb_AIso_pt_bins_inc_eta.root:Trg32_fb_AIso_pt_bins_inc_eta',        'e_trg32fb_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg32_fb_AIso_pt_bins_inc_eta.root:Trg32_fb_AIso_pt_bins_inc_eta', 'e_trg32fb_aiso_kit_embed'),
+
+    (loc+'ZeeTP_Data_Fits_Trg35_Iso_pt_eta_bins.root:Trg35_Iso_pt_eta_bins',      'e_trg35_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg35_Iso_pt_eta_bins.root:Trg35_Iso_pt_eta_bins',        'e_trg35_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg35_Iso_pt_eta_bins.root:Trg35_Iso_pt_eta_bins', 'e_trg35_kit_embed'),
+    (loc+'ZeeTP_Data_Fits_Trg35_AIso_pt_bins_inc_eta.root:Trg35_AIso_pt_bins_inc_eta',      'e_trg35_aiso_kit_data'),
+    (loc+'ZeeTP_DYJetsToLL_Fits_Trg35_AIso_pt_bins_inc_eta.root:Trg35_AIso_pt_bins_inc_eta',        'e_trg35_aiso_kit_mc'),
+    (loc+'ZeeTP_Embedding_Fits_Trg35_AIso_pt_bins_inc_eta.root:Trg35_AIso_pt_bins_inc_eta', 'e_trg35_aiso_kit_embed'),
 
 ]
 for task in histsToWrap:
@@ -302,6 +330,34 @@ wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
                                    'e_trg_binned_kit_mc', ['e_trg_kit_mc', 'e_trg_aiso_kit_mc'])
 wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
                                    'e_trg_binned_kit_embed', ['e_trg_kit_embed', 'e_trg_aiso_kit_embed'])
+
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg27_binned_kit_data', ['e_trg27_kit_data', 'e_trg27_aiso_kit_data'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg27_binned_kit_mc', ['e_trg27_kit_mc', 'e_trg27_aiso_kit_mc'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg27_binned_kit_embed', ['e_trg27_kit_embed', 'e_trg27_aiso_kit_embed'])
+
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32_binned_kit_data', ['e_trg32_kit_data', 'e_trg32_aiso_kit_data'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32_binned_kit_mc', ['e_trg32_kit_mc', 'e_trg32_aiso_kit_mc'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32_binned_kit_embed', ['e_trg32_kit_embed', 'e_trg32_aiso_kit_embed'])
+
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32fb_binned_kit_data', ['e_trg32fb_kit_data', 'e_trg32fb_aiso_kit_data'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32fb_binned_kit_mc', ['e_trg32fb_kit_mc', 'e_trg32fb_aiso_kit_mc'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg32fb_binned_kit_embed', ['e_trg32fb_kit_embed', 'e_trg32fb_aiso_kit_embed'])
+
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg35_binned_kit_data', ['e_trg35_kit_data', 'e_trg35_aiso_kit_data'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg35_binned_kit_mc', ['e_trg35_kit_mc', 'e_trg35_aiso_kit_mc'])
+wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
+                                   'e_trg35_binned_kit_embed', ['e_trg35_kit_embed', 'e_trg35_aiso_kit_embed'])
 
 wsptools.MakeBinnedCategoryFuncMap(w, 'e_iso', [0., 0.15,  0.50],
                                    'e_trg27_trg32_binned_kit_data', ['e_trg27_trg32_kit_data', 'e_trg27_trg32_aiso_kit_data'])
@@ -337,9 +393,9 @@ w.factory('expr::e_idiso_binned_kit_embed("@0*@1", e_id_kit_embed, e_iso_binned_
 w.factory('expr::e_idiso_kit_embed("@0*@1", e_id80_kit_embed, e_iso_kit_embed)')
 w.factory('expr::e_idiso_binned_kit_embed("@0*@1", e_id80_kit_embed, e_iso_binned_kit_embed)')
 
-for t in ['trg', 'trg_binned', 'trg27_trg32', 'trg27_trg32_binned', 'trg27_trg35', 'trg27_trg35_binned', 'trg27_trg32_trg32fb', 'trg27_trg32_trg32fb_binned', 'id90', 'id80', 'iso', 'iso_binned', 'idiso_binned']:
+for t in ['trg', 'trg_binned', 'trg27_trg32', 'trg27_trg32_binned', 'trg27_trg35', 'trg27_trg35_binned', 'trg27_trg32_trg32fb', 'trg27_trg32_trg32fb_binned', 'trg27', 'trg32', 'trg32fb', 'trg35','id90', 'id80', 'iso', 'iso_binned', 'idiso_binned']:
     w.factory('expr::e_%s_kit_ratio("@0/@1", e_%s_kit_data, e_%s_kit_mc)' % (t, t, t))
-for t in ['trg', 'trg_binned', 'trg27_trg32', 'trg27_trg32_binned', 'trg27_trg35', 'trg27_trg35_binned', 'trg27_trg32_trg32fb', 'trg27_trg32_trg32fb_binned', 'id90', 'id80', 'iso', 'iso_binned', 'idiso_binned']:
+for t in ['trg', 'trg_binned', 'trg27_trg32', 'trg27_trg32_binned', 'trg27_trg35', 'trg27_trg35_binned', 'trg27_trg32_trg32fb', 'trg27_trg32_trg32fb_binned', 'trg27', 'trg32', 'trg32fb', 'trg35', 'id90', 'id80', 'iso', 'iso_binned', 'idiso_binned']:
     w.factory('expr::e_%s_embed_kit_ratio("@0/@1", e_%s_kit_data, e_%s_kit_embed)' % (t, t, t))
 
 
