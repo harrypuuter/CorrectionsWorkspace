@@ -571,7 +571,8 @@ for task in kitHistsToWrap:
                           wsptools.ProcessDESYLeptonSFs(task[0], task[1], task[2]), name=task[2])
 
 for t in ['trg_EleTau_Ele24Leg_kit']:
-    w.factory('expr::e_%s_ratio("@0/@1", e_%s_data, e_%s_mc)' % (t, t, t))
+    w.factory('expr::e_%s_ratio_mc("@0/@1", e_%s_data, e_%s_mc)' % (t, t, t))
+    w.factory('expr::e_%s_ratio_embed("@0/@1", e_%s_data, e_%s_embed)' % (t, t, t))
 
  # muon triggers
 kitHistsToWrap = [
@@ -585,10 +586,11 @@ for task in kitHistsToWrap:
                           wsptools.ProcessDESYLeptonSFs(task[0], task[1], task[2]), name=task[2])
 
 for t in ['trg_MuTau_Mu20Leg_kit']:
-    w.factory('expr::m_%s_ratio("@0/@1", m_%s_data, m_%s_mc)' % (t, t, t))
+    w.factory('expr::m_%s_ratio_mc("@0/@1", m_%s_data, m_%s_mc)' % (t, t, t))
+    w.factory('expr::m_%s_ratio_embed("@0/@1", m_%s_data, m_%s_embed)' % (t, t, t))
 
 w.importClassCode('CrystalBallEfficiency')
 
-w.Print()
+#w.Print()
 w.writeToFile('htt_scalefactors_v17_5.root')
 w.Delete()
