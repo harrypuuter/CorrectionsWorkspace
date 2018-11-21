@@ -556,26 +556,36 @@ wsptools.SafeWrapHist(w,['t_pt'],tt_tau_leg_kit_data, name="tt_PFTau35OR40_tight
 wsptools.SafeWrapHist(w,['t_pt'],tt_tau_leg_kit_embed, name="tt_PFTau35OR40_tight_kit_embed")
 w.factory('expr::tt_emb_PFTau35OR40_tight_kit_ratio("@0/@1", tt_PFTau35OR40_tight_kit_data, tt_PFTau35OR40_tight_kit_embed)')
 
-## Lepton Legs
-pt_bins = [0,21,22,23,24,25,1000]
-n_bins=len(pt_bins)-1
-mt_mu_leg_kit_embed = ROOT.TH1F("mt_emb_IsoMu20_kit_ratio","mt_emb_IsoMu20_kit_ratio", n_bins, array("d",pt_bins))
-mt_mu_leg_kit_embed.SetBinContent(1,1.0)
-mt_mu_leg_kit_embed.SetBinContent(2,0.81)
-mt_mu_leg_kit_embed.SetBinContent(3,0.82)
-mt_mu_leg_kit_embed.SetBinContent(4,0.83)
-mt_mu_leg_kit_embed.SetBinContent(5,1.0)
-w.factory('expr::mt_emb_IsoMu20_kit_ratio("@0", mt_emb_IsoMu20_kit_ratio)')
+### KIT electron & muon tag and probe results for lepton legs of cross triggers
+loc = 'inputs/KIT'
 
-pt_bins = [0,25,26,27,28,1000]
-n_bins=len(pt_bins)-1
-et_ele_leg_kit_embed = ROOT.TH1F("et_emb_Ele24_kit_ratio","et_emb_Ele24_kit_ratio", n_bins, array("d",pt_bins))
-et_ele_leg_kit_embed.SetBinContent(1,1.0)
-et_ele_leg_kit_embed.SetBinContent(2,0.39)
-et_ele_leg_kit_embed.SetBinContent(3,0.46)
-et_ele_leg_kit_embed.SetBinContent(4,0.48)
-et_ele_leg_kit_embed.SetBinContent(5,1.0)
-w.factory('expr::et_emb_Ele24_kit_ratio("@0", et_emb_Ele24_kit_ratio)')
+ #electron triggers
+kitHistsToWrap = [
+    (loc+'/Electron_EleTau_Ele24.root',           'mc', 'e_trg_EleTau_Ele24Leg_kit_mc'),
+    (loc+'/Electron_EleTau_Ele24.root',           'data', 'e_trg_EleTau_Ele24Leg_kit_data'),
+    (loc+'/Electron_EleTau_Ele24.root',           'emb', 'e_trg_EleTau_Ele24Leg_kit_embed')
+]
+
+for task in kitHistsToWrap:
+    wsptools.SafeWrapHist(w, ['e_pt', 'expr::e_abs_eta("TMath::Abs(@0)",e_eta[0])'],
+                          wsptools.ProcessDESYLeptonSFs(task[0], task[1], task[2]), name=task[2])
+
+for t in ['trg_EleTau_Ele24Leg_desy']:
+    w.factory('expr::e_%s_ratio("@0/@1", e_%s_data, e_%s_mc)' % (t, t, t))
+
+ # muon triggers
+kitHistsToWrap = [
+    (loc+'/Muon_MuTau_IsoMu20.root',           'mc', 'm_trg_MuTau_Mu20Leg_kit_mc'),
+    (loc+'/Muon_MuTau_IsoMu20.root',           'data', 'm_trg_MuTau_Mu20Leg_kit_data'),
+    (loc+'/Muon_MuTau_IsoMu20.root',           'emb', 'm_trg_MuTau_Mu20Leg_kit_embed'),
+]
+
+for task in kitHistsToWrap:
+    wsptools.SafeWrapHist(w, ['m_pt', 'expr::m_abs_eta("TMath::Abs(@0)",m_eta[0])'],
+                          wsptools.ProcessDESYLeptonSFs(task[0], task[1], task[2]), name=task[2])
+
+for t in ['trg_MuTau_Mu20Leg_kit']:
+    w.factory('expr::m_%s_ratio("@0/@1", m_%s_data, m_%s_mc)' % (t, t, t))
 
 w.importClassCode('CrystalBallEfficiency')
 
