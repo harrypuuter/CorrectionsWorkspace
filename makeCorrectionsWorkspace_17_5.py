@@ -570,7 +570,7 @@ for task in kitHistsToWrap:
     wsptools.SafeWrapHist(w, ['e_pt', 'expr::e_abs_eta("TMath::Abs(@0)",e_eta[0])'],
                           wsptools.ProcessDESYLeptonSFs(task[0], task[1], task[2]), name=task[2])
 
-for t in ['trg_EleTau_Ele24Leg_desy']:
+for t in ['trg_EleTau_Ele24Leg_kit']:
     w.factory('expr::e_%s_ratio("@0/@1", e_%s_data, e_%s_mc)' % (t, t, t))
 
  # muon triggers
